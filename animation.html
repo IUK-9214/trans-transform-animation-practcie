@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-propertise</title>
+    <style>
+        .cont{
+            background-color: indigo;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(55, 235, 0);
+            width: 30px;
+            height: 30px;
+    
+            animation: move 4s 2s  cubic-bezier(0.05, 0.34, 1, 0.19) infinite,
+                        move2 4s 2s ease-in-out reverse infinite ; 
+        }
+         @keyframes move {
+            form
+            {
+
+        }
+        to{
+background-color: brown;
+transform: rotate(360deg) scale(6) ;
+
+        }
+    } 
+    @keyframes move2 {
+        0%{
+            transform: translateX(30px);
+            background-color: aqua;
+        }
+        20%{
+            transform: translateX(70px);
+            background-color: rgb(76, 0, 255);
+        }
+        30%{
+            transform: translateX(100px);
+            background-color: rgb(7, 238, 80);
+        }
+        40%{
+            transform: translateX(150px);
+            background-color: rgb(255, 123, 0);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

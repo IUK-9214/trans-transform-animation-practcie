@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfrom-propertise</title>
+    <style>
+        .cont{
+            border: 2px solid red;
+            height: 40vh;
+            width: 60vw;
+            background-color: rgba(10, 236, 56, 0.728);
+        padding: 20px;
+        display: grid;
+        grid-template-column: ;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        }
+        .boxs{
+            border: 2px solid orange;
+            height: 60px;
+            width: 60px;
+            background-color: rgba(255, 0, 0, 0.904);
+        }
+        .item1{
+            grid-area: 1/1;
+            transform: rotate(45deg)  scale(1.5);
+        }
+        .item2{
+            grid-area: 1/1;
+            transform: rotate(100deg)  scale(1.5);
+            background-color: rgba(0, 255, 255, 0.434);
+        }
+        .item3{
+            grid-area: 1/1;
+            transform: rotate(160deg)  scale(1.5);
+            background-color: rgba(0, 0, 255, 0.603);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="boxs item1">1</div>
+        <div class="boxs item2">2</div>
+        <div class="boxs item3">3</div>
+    </div>
+</body>
+</html>

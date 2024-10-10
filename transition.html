@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-properties</title>
+<style>
+    .cont{
+background-color: tomato;
+width:400px;
+height: 400px;
+margin: 0 auto;
+display: flex;
+justify-content:flex-start;
+align-items:flex-end;
+    }
+    .item{
+background-color: blue;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+transition-property: transform;
+transition-duration: 3s;
+transition-timing-function: ease-in-out;
+transition-delay: 2s;
+
+    }
+    .trans{
+ transform: translateX(350px) translateY(-150px);
+    }
+</style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item trans"></div>
+    </div>
+</body>
+</html>
