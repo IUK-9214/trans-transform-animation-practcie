@@ -1,0 +1,101 @@
+.maincont{
+background-color: aqua;
+width: 400px;
+height: 400px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.ball {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one
+{
+  align-self: flex-end;
+  animation: firsty 4s ease-in-out 1s infinite backwards ;
+}
+.two{
+position: relative;
+right: 40px;
+animation: second 4s ease-in-out 1s infinite forwards;
+}
+@keyframes firsty {
+   0%{
+    transform: translateY(0px)  translateX(350px);
+   }
+   10%{
+    transform: translateY(-65px) translateX(0px);
+   }
+   20%{
+    transform: translateY(-130px) translateX(350px);
+   }
+   30%{
+    transform: translateY(-195px) translateX(0px);
+   }
+   40%{
+    transform: translateY(-260px) translateX(350px);
+   }
+   50%{
+    transform: translateY(-350px) translateX(0px);
+   }
+   60%{
+    transform: translateY(-260px) translateX(350px);
+   }
+   70%{
+    transform: translateY(-195px) translateX(0px);
+   }
+   80%{
+    transform: translateY(-130px) translateX(350px);
+   }
+   90%{
+    transform: translateY(-65px) translateX(0px);
+   }
+   100%{
+    transform: translateY(0px) translateX(350px);
+   }
+}
+ 
+
+
+@keyframes second {
+    0%{
+        transform: translateY(0px)  translateX(350px);
+       }
+       10%{
+        transform: translateY(65px) translateX(0px);
+       }
+       20%{
+        transform: translateY(130px) translateX(350px);
+       }
+       30%{
+        transform: translateY(195px) translateX(0px);
+       }
+       40%{
+        transform: translateY(260px) translateX(350px);
+       }
+       50%{
+        transform: translateY(350px) translateX(0px);
+       }
+       60%{
+        transform: translateY(260px) translateX(350px);
+       }
+       70%{
+        transform: translateY(195px) translateX(0px);
+       }
+       80%{
+        transform: translateY(130px) translateX(350px);
+       }
+       90%{
+        transform: translateY(65px) translateX(0px);
+       }
+       100%{
+        transform: translateY(0px) translateX(350px);
+       }
+}
